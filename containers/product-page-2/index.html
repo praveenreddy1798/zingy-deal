@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://zingy-ui.netlify.app/main.css">
+    <link rel="stylesheet" href="../../utils.css">
+    <title>Zingy Deal | Product Page 2</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar bg-white flex-between no-wrap pd-xsm">
+            <a class="nav-left" href="#">
+                <h3 class="pd-sm secondary-color">Zingy Deal</h3>
+            </a>
+            <input class="input input-secondary border-radius-sm search" type="text" placeholder="search">
+            <div class="flex-evenly pd-sm col-gap-2 nav-right">
+                <a href="/containers/login/index.html"><button class="btn btn-secondary">Login</button></a>
+                <a href="/containers/wishlist-page/index.html">
+                    <div class="badge-container icon-badge">
+                        <button class="wishlist"><i class="fa fa-heart-o fa-2x nav-wishlist"></i></button>
+                        <span class="rounded">1</span>
+                    </div>
+                </a>
+                <a href="/containers/cart-page/index.html">
+                    <div class="badge-container icon-badge">
+                        <button><i class="fa fa-shopping-cart fa-2x cart nav-cart"></i></button>
+                        <span class="rounded">1</span>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-menu flex-evenly align-center">
+                <button class="btn hamburger mobile-item secondary-color"><i
+                        class="fa fa-bars fa-2x h-100"></i></button>
+                <button class="btn hamburger-close mobile-item secondary-color"><i
+                        class="fa fa-close fa-2x h-100"></i></button>
+            </div>
+        </nav>
+        <div class="sidebar display-none">
+            <ul class="sidebar-items flex-vertical align-center">
+                <a href="/containers/login/index.html">
+                    <li>Login</li>
+                </a>
+                <a href="/containers/wishlist-page/index.html">
+                    <li>Wishlist</li>
+                </a>
+                <a href="/containers/cart-page/index.html">
+                    <li>Cart</li>
+                </a>
+            </ul>
+        </div>
+        <div class="sidebar pd-md">
+            <div class="flex-between">
+                <h3>Filter</h3>
+                <button>
+                    <h3 class="underline regular-dark">Clear</h3>
+                </button>
+            </div>
+            <div class="mg-t-md">
+                <h3>Price</h3>
+                <datalist class="price-datalist" id="tickmarks">
+                    <option value="0" label="0"></option>
+                    <option value="50" label="50"></option>
+                    <option value="100" label="100"></option>
+                </datalist>
+                <input class="slider" type="range" min="1" max="100" value="50" list="tickmarks">
+            </div>
+            <div>
+                <div class="flex-vertical row-gap-p5 mg-t-md">
+                    <h3>Category</h3>
+                    <div class="flex align-center gap-1">
+                        <input type="checkbox" name="gender" value="men" />
+                        <label htmlFor="gender">
+                            Men
+                        </label>
+                    </div>
+                    <div class="flex align-center gap-1">
+                        <input type="checkbox" name="gender" value="women" />
+                        <label htmlFor="gender">
+                            Women
+                        </label>
+                    </div>
+                    <div class="flex align-center gap-1">
+                        <input type="checkbox" name="gender" value="others" />
+                        <label htmlFor="gender">
+                            Others
+                        </label>
+                    </div>
+                </div>
+                <div class="flex-vertical row-gap-p5 mg-t-md">
+                    <h3>Rating</h3>
+                    <div class="flex align-center gap-1">
+                        <input type="radio" name="rating" value="4 stars & above" />
+                        <label htmlFor="rating">
+                            4 stars & above
+                        </label>
+                    </div>
+                    <div class="flex align-center gap-1">
+                        <input type="radio" name="rating" value="3 starts & above" />
+                        <label htmlFor="rating">
+                            3 starts & above
+                        </label>
+                    </div>
+                    <div class="flex align-center gap-1">
+                        <input type="radio" name="rating" value="2 stars & above" />
+                        <label htmlFor="rating">
+                            2 stars & above
+                        </label>
+                    </div>
+                    <div class="flex align-center gap-1">
+                        <input type="radio" name="rating" value="1 star & above" />
+                        <label htmlFor="rating">
+                            1 star & above
+                        </label>
+                    </div>
+                </div>
+                <div class="flex-vertical row-gap-p5 mg-t-md">
+                    <h3>Sort By</h3>
+                    <div class="flex align-center gap-1">
+                        <input type="radio" name="sortBy" value="price low to high" />
+                        <label htmlFor="sortBy">
+                            Price - Low to High
+                        </label>
+                    </div>
+                    <div class="flex align-center gap-1">
+                        <input type="radio" name="sortBy" value="price high to low" />
+                        <label htmlFor="sortBy">
+                            Price - High to Low
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main-section pd-md">
+            <div class="flex align-center">
+                <h3 class="mg-r-xsm">Showing All Products</h3>
+                <h4 class="regular-dark">( Showing 20 Products )</h4>
+            </div>
+            <div class="flex-center mg-t-md gap-2">
+                <!-- Horizontal Card with Shadow -->
+                <div class='card horizontal-card flex bg-white'>
+                    <div class="card-image-container flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                    </div>
+                    <div class="mg-md flex-vertical justify-between">
+                        <div>
+                            <h3 class="regular">Men Premium Jacket</h3>
+                            <div class="flex">
+                                <h3 class="bold mg-r-sm mg-t-xsm">₹2000</h3>
+                                <h3 class="regular line-through muted mg-t-xsm">₹3000</h3>
+                            </div>
+                            <h3 class="bold secondary-color mg-t-xsm">50% off</h3>
+                        </div>
+                        <div>
+                            <div>
+                                <button class="btn btn-action w-100 flex-grow-1 mg-t-xsm">Go to Cart</button>
+                                <button class="btn btn-secondary w-100 flex-grow-1 mg-t-xsm">Remove from
+                                    Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Horizontal Card with Shadow -->
+                <div class='card horizontal-card flex bg-white'>
+                    <div class="card-image-container flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                    </div>
+                    <div class="mg-md flex-vertical justify-between">
+                        <div>
+                            <h3 class="regular">Men Premium Jacket</h3>
+                            <div class="flex">
+                                <h3 class="bold mg-r-sm mg-t-xsm">₹2000</h3>
+                                <h3 class="regular line-through muted mg-t-xsm">₹3000</h3>
+                            </div>
+                            <h3 class="bold secondary-color mg-t-xsm">50% off</h3>
+                        </div>
+                        <div>
+                            <div>
+                                <button class="btn btn-secondary w-100 flex-grow-1 mg-t-xsm">Add to Cart</button>
+                                <button class="btn btn-action outline outline-action w-100 flex-grow-1 mg-t-xsm">Save
+                                    to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Horizontal Card with Shadow -->
+                <div class='card horizontal-card flex bg-white'>
+                    <div class="card-image-container flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                    </div>
+                    <div class="mg-md flex-vertical justify-between">
+                        <div>
+                            <h3 class="regular">Men Premium Jacket</h3>
+                            <div class="flex">
+                                <h3 class="bold mg-r-sm mg-t-xsm">₹2000</h3>
+                                <h3 class="regular line-through muted mg-t-xsm">₹3000</h3>
+                            </div>
+                            <h3 class="bold secondary-color mg-t-xsm">50% off</h3>
+                        </div>
+                        <div>
+                            <div>
+                                <button class="btn btn-secondary w-100 flex-grow-1 mg-t-xsm">Add to Cart</button>
+                                <button class="btn btn-action outline outline-action w-100 flex-grow-1 mg-t-xsm">Save
+                                    to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Horizontal Card with Shadow -->
+                <div class='card horizontal-card flex bg-white'>
+                    <div class="card-image-container flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                    </div>
+                    <div class="mg-md flex-vertical justify-between">
+                        <div>
+                            <h3 class="regular">Men Premium Jacket</h3>
+                            <div class="flex">
+                                <h3 class="bold mg-r-sm mg-t-xsm">₹2000</h3>
+                                <h3 class="regular line-through muted mg-t-xsm">₹3000</h3>
+                            </div>
+                            <h3 class="bold secondary-color mg-t-xsm">50% off</h3>
+                        </div>
+                        <div>
+                            <div>
+                                <button class="btn btn-secondary w-100 flex-grow-1 mg-t-xsm">Add to Cart</button>
+                                <button class="btn btn-action outline outline-action w-100 flex-grow-1 mg-t-xsm">Save
+                                    to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src='https://zingy-ui.netlify.app/index.js'></script>
+</body>
+
+</html>
