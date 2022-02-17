@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://zingy-ui.netlify.app/main.css">
+    <link rel="stylesheet" href="../../utils.css">
+    <title>Zingy Deal | Signup</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar bg-white flex-between no-wrap pd-xsm">
+            <a class="nav-left" href="/index.html">
+                <h3 class="pd-sm secondary-color nav-logo">Zingy Deal</h3>
+            </a>
+            <input class="input input-secondary border-radius-sm search" type="text" placeholder="search">
+            <div class="flex-evenly pd-sm col-gap-2 nav-right">
+                <a href="/containers/login/index.html"><button class="btn btn-secondary">Login</button></a>
+                <a href="/containers/wishlist-page/index.html">
+                    <div class="badge-container icon-badge">
+                        <button class="wishlist"><i class="fa fa-heart-o fa-2x nav-wishlist"></i></button>
+                        <span class="rounded">1</span>
+                    </div>
+                </a>
+                <a href="/containers/cart-page/index.html">
+                    <div class="badge-container icon-badge">
+                        <button><i class="fa fa-shopping-cart fa-2x cart nav-cart"></i></button>
+                        <span class="rounded">1</span>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-menu flex-evenly align-center">
+                <button class="btn hamburger mobile-item secondary-color"><i
+                        class="fa fa-bars fa-2x h-100"></i></button>
+                <button class="btn hamburger-close mobile-item secondary-color"><i
+                        class="fa fa-close fa-2x h-100"></i></button>
+            </div>
+        </nav>
+        <div class="sidebar pd-md display-none">
+            <ul class="sidebar-items flex-vertical align-center">
+                <a href="/containers/login/index.html">
+                    <li>Login</li>
+                </a>
+                <a href="/containers/wishlist-page/index.html">
+                    <li>Wishlist</li>
+                </a>
+                <a href="/containers/cart-page/index.html">
+                    <li>Cart</li>
+                </a>
+            </ul>
+        </div>
+        <main class="main-section main-section-strech flex-center">
+            <div class="flex-center bg-white w-max-content">
+                <div class="flex-vertical pd-xlg w-max-content">
+                    <h3 class="text-align-center">Signup</h3>
+                    <div class="mg-t-sm">
+                        <h4 class="regular-dark black-color mg-b-xxsm">Email address</h4>
+                        <input class="input border-radius-sm" type="text" placeholder="email">
+                    </div>
+                    <div class="mg-t-sm">
+                        <h4 class="regular-dark black-color mg-b-xxsm">Password</h4>
+                        <input class="input border-radius-sm" type="password" placeholder="password">
+                    </div>
+                    <div class="flex align-center gap-1 mg-t-sm">
+                        <input type="checkbox" name="remember-me" value="remember-me" />
+                        <label htmlFor="remember-me">
+                            I accept all terms and conditions
+                        </label>
+                    </div>
+                    <button class="btn btn-action w-100 mg-t-sm">Signup</button>
+                    <button class="btn btn-secondary outline outline-secondary w-100 mg-t-sm">Already have an
+                        Account</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src='https://zingy-ui.netlify.app/index.js'></script>
+</body>
+
+</html>

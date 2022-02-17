@@ -1,0 +1,52 @@
+.page-wrapper {
+  overflow: hidden;
+}
+.navbar {
+  border: 1px solid var(--light-grey);
+}
+
+.main-section {
+  background-color: var(--lynx-white);
+  overflow-y: auto;
+}
+
+.main-section-strech {
+  background-color: var(--lynx-white);
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.sidebar {
+  margin-top: 5rem;
+}
+
+.sidebar-mobile {
+  background-color: var(--lynx-white);
+}
+
+.nav-wishlist,
+.nav-cart {
+  font-size: 2.5em;
+}
+
+.icon-badge span {
+  top: -40%;
+  right: -42.5%;
+}
+
+.forgot-password {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-wishlist,
+  .nav-cart {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav-logo {
+    font-size: 85%;
+  }
+}
