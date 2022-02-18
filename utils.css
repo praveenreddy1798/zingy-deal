@@ -38,14 +38,46 @@
   padding-right: 0;
 }
 
+.arrival-img {
+  flex-basis: 10vw;
+  height: 20vh;
+}
+
 .border-secondary-dark {
   border: 1.5px solid var(--secondary);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .nav-wishlist,
   .nav-cart {
     font-size: 2em;
+  }
+  .arrival-img {
+    flex-basis: 30vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  label {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .arrival-img {
+    flex-basis: 30vh;
+  }
+  .arrival-left-section,
+  .arrival-right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 1rem;
+    height: 25vh;
+  }
+  .new-arrival {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .new-arrival + div {
+    text-align: center;
   }
 }
 

@@ -1,0 +1,21 @@
+.main-section {
+  background-color: var(--lynx-white);
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.content-section {
+  background-color: var(--lynx-gray-dark);
+}
+
+.arrival-left-section,
+.arrival-right-section {
+  width: 50%;
+  background-color: var(--lynx-gray-dark);
+}
+
+.text-overlay-card {
+  width: 20%;
+  height: 5rem;
+}
+
