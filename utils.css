@@ -38,6 +38,10 @@
   padding-right: 0;
 }
 
+.border-secondary-dark {
+  border: 1.5px solid var(--secondary);
+}
+
 @media only screen and (max-width: 900px) {
   .nav-wishlist,
   .nav-cart {

@@ -2,11 +2,10 @@
   background-color: transparent;
 }
 
-.increase,
-.decrease {
+.increase-item,
+.decrease-item {
   width: 2rem;
   height: 2rem;
-  border: 1.5px solid var(--secondary);
   text-align: center;
   font-size: 1.5rem;
 }
@@ -14,7 +13,6 @@
 .quantity {
   width: 3rem;
   height: 2rem;
-  border: 1.5px solid var(--secondary);
   padding-left: 1rem;
 }
 
