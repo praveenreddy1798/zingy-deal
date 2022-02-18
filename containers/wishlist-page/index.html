@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://zingy-ui.netlify.app/main.css">
+    <link rel="stylesheet" href="../../utils.css">
+    <title>Zingy Deal | Wishlist</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar bg-white flex-between no-wrap pd-xsm">
+            <a class="nav-left" href="/index.html">
+                <h3 class="pd-sm secondary-color nav-logo">Zingy Deal</h3>
+            </a>
+            <input class="input input-secondary border-radius-sm search" type="text" placeholder="search">
+            <div class="flex-evenly pd-sm col-gap-2 nav-right">
+                <a href="/containers/login/index.html"><button class="btn btn-secondary">Login</button></a>
+                <a href="/containers/wishlist-page/index.html">
+                    <div class="badge-container icon-badge">
+                        <button class="wishlist"><i class="fa fa-heart-o fa-2x nav-wishlist"></i></button>
+                        <span class="rounded">1</span>
+                    </div>
+                </a>
+                <a href="/containers/cart-page/index.html">
+                    <div class="badge-container icon-badge">
+                        <button><i class="fa fa-shopping-cart fa-2x cart nav-cart"></i></button>
+                        <span class="rounded">1</span>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-menu flex-evenly align-center">
+                <button class="btn hamburger mobile-item secondary-color"><i
+                        class="fa fa-bars fa-2x h-100"></i></button>
+                <button class="btn hamburger-close mobile-item secondary-color"><i
+                        class="fa fa-close fa-2x h-100"></i></button>
+            </div>
+        </nav>
+        <div class="sidebar pd-md display-none">
+            <ul class="sidebar-items flex-vertical align-center">
+                <a href="/containers/login/index.html">
+                    <li>Login</li>
+                </a>
+                <a class="active-sidebar-item" href="/containers/wishlist-page/index.html">
+                    <li>Wishlist</li>
+                </a>
+                <a href="/containers/cart-page/index.html">
+                    <li>Cart</li>
+                </a>
+            </ul>
+        </div>
+        <main class="main-section main-section-strech pd-xlg">
+            <div class="flex-center">
+                <h3>My Wishlist</h3>
+            </div>
+            <div class="flex-center mg-t-md gap-2">
+                <!-- Vertical Card -->
+                <div class='card bg-white'>
+                    <div class="card-image-container h-100 w-100 position-relative flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                        <button class="btn btn-icon btn-icon-card position-absolute wishlist rounded flex-center">
+                            <i class="fa fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="flex-vertical mg-sm row-gap-p5 align-center">
+                        <h4 class="regular">Men Premium Jacket</h4>
+                        <h3 class="bold">₹2000</h3>
+                    </div>
+                    <button class="btn btn-secondary w-100">Move to Cart</button>
+                </div>
+                <div class='card bg-white'>
+                    <div class="card-image-container h-100 w-100 position-relative flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                        <button class="btn btn-icon btn-icon-card position-absolute wishlist rounded flex-center">
+                            <i class="fa fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="flex-vertical mg-sm row-gap-p5 align-center">
+                        <h4 class="regular">Men Premium Jacket</h4>
+                        <h3 class="bold">₹2000</h3>
+                    </div>
+                    <button class="btn btn-secondary w-100">Move to Cart</button>
+                </div>
+                <div class='card bg-white'>
+                    <div class="card-image-container h-100 w-100 position-relative flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                        <button class="btn btn-icon btn-icon-card position-absolute wishlist rounded flex-center">
+                            <i class="fa fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="flex-vertical mg-sm row-gap-p5 align-center">
+                        <h4 class="regular">Men Premium Jacket</h4>
+                        <h3 class="bold">₹2000</h3>
+                    </div>
+                    <button class="btn btn-secondary w-100">Move to Cart</button>
+                </div>
+                <div class='card bg-white'>
+                    <div class="card-image-container h-100 w-100 position-relative flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                        <button class="btn btn-icon btn-icon-card position-absolute wishlist rounded flex-center">
+                            <i class="fa fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="flex-vertical mg-sm row-gap-p5 align-center">
+                        <h4 class="regular">Men Premium Jacket</h4>
+                        <h3 class="bold">₹2000</h3>
+                    </div>
+                    <button class="btn btn-secondary w-100">Move to Cart</button>
+                </div>
+
+                <div class='card bg-white'>
+                    <div class="card-image-container h-100 w-100 position-relative flex-evenly">
+                        <img class="card-image" src="../../assets/product.png" alt="product-image">
+                        <button class="btn btn-icon btn-icon-card position-absolute wishlist rounded flex-center">
+                            <i class="fa fa-heart fa-2x"></i></button>
+                    </div>
+                    <div class="flex-vertical mg-sm row-gap-p5 align-center">
+                        <h4 class="regular">Men Premium Jacket</h4>
+                        <h3 class="bold">₹2000</h3>
+                    </div>
+                    <button class="btn btn-secondary w-100">Move to Cart</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src='https://zingy-ui.netlify.app/index.js'></script>
+</body>
+
+</html>

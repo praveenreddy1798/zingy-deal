@@ -1,0 +1,24 @@
+.quantity-section > * {
+  background-color: transparent;
+}
+
+.increase-item,
+.decrease-item {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.quantity {
+  width: 3rem;
+  height: 2rem;
+  padding-left: 1rem;
+}
+
+.price-details-cart hr {
+  margin: 0.5rem 0;
+}
+.prices > * {
+  text-align: end;
+}

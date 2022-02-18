@@ -43,6 +43,10 @@
   height: 20vh;
 }
 
+.border-secondary-dark {
+  border: 1.5px solid var(--secondary);
+}
+
 @media only screen and (max-width: 1000px) {
   .nav-wishlist,
   .nav-cart {
