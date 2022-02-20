@@ -43,3 +43,26 @@
 .price-category-img:nth-child(3) {
   margin-right: -2rem;
 }
+
+.main-section > div {
+  min-height: 100%;
+  max-height: max-content;
+}
+
+@media only screen and (max-width: 1024px) {
+  .price-category-img {
+    height: 35rem;
+  }
+  .text-overlay-card {
+    height: 17.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .price-category-img {
+    height: 20rem;
+  }
+  .text-overlay-card {
+    height: 15rem;
+  }
+}

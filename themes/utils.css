@@ -65,7 +65,6 @@
     line-height: 2rem;
   }
   .arrival-img {
-    flex-basis: 5vh;
     object-fit: contain;
   }
   .arrival-left-section,
