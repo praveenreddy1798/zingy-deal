@@ -2,20 +2,44 @@
   background-color: var(--lynx-white);
   grid-column-start: 1;
   grid-column-end: -1;
+  overflow: auto;
+  background-color: var(--white);
 }
 
 .content-section {
-  background-color: var(--lynx-gray-dark);
+  background-color: var(--white);
+  height: max-content;
+}
+
+.content-section div {
+  overflow-x: hidden;
 }
 
 .arrival-left-section,
 .arrival-right-section {
   width: 50%;
   background-color: var(--lynx-gray-dark);
+  height: 100%;
 }
 
 .text-overlay-card {
-  width: 20%;
   height: 5rem;
+  width: 20%;
+  height: 7.5rem;
 }
 
+.price-category-img {
+  width: 30rem;
+  height: 15rem;
+  cursor: pointer;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.price-category-img:nth-child(1) {
+  margin-left: -2rem;
+}
+
+.price-category-img:nth-child(3) {
+  margin-right: -2rem;
+}

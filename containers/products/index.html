@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://zingy-ui.netlify.app/main.css">
-    <link rel="stylesheet" href="../../utils.css">
+    <link rel="stylesheet" href="https://zingy-ui.netlify.app/themes/main.css">
+    <link rel="stylesheet" href="/themes/utils.css">
     <title>Zingy Deal | Products Page</title>
 </head>
 
@@ -20,13 +20,13 @@
             <input class="input input-secondary border-radius-sm search" type="text" placeholder="search">
             <div class="flex-evenly pd-sm col-gap-2 nav-right">
                 <a href="/containers/login/index.html"><button class="btn btn-secondary">Login</button></a>
-                <a href="/containers/wishlist-page/index.html">
+                <a href="/containers/wishlist/index.html">
                     <div class="badge-container icon-badge">
                         <button class="wishlist"><i class="fa fa-heart-o fa-2x nav-wishlist"></i></button>
                         <span class="rounded">1</span>
                     </div>
                 </a>
-                <a href="/containers/cart-page/index.html">
+                <a href="/containers/cart/index.html">
                     <div class="badge-container icon-badge">
                         <button><i class="fa fa-shopping-cart fa-2x cart nav-cart"></i></button>
                         <span class="rounded">1</span>
@@ -45,10 +45,10 @@
                 <a href="/containers/login/index.html">
                     <li>Login</li>
                 </a>
-                <a href="/containers/wishlist-page/index.html">
+                <a href="/containers/wishlist/index.html">
                     <li>Wishlist</li>
                 </a>
-                <a href="/containers/cart-page/index.html">
+                <a href="/containers/cart/index.html">
                     <li>Cart</li>
                 </a>
             </ul>
@@ -62,12 +62,14 @@
             </div>
             <div class="mg-t-md">
                 <h3>Price</h3>
-                <datalist class="price-datalist" id="tickmarks">
-                    <option value="0" label="0"></option>
-                    <option value="50" label="50"></option>
-                    <option value="100" label="100"></option>
-                </datalist>
-                <input class="slider" type="range" min="1" max="100" value="50" list="tickmarks">
+                <div class="slider-container">
+                    <datalist class="price-datalist flex-between" id="tickmarks">
+                        <option value="0" label="0"></option>
+                        <option value="50" label="50"></option>
+                        <option value="100" label="100"></option>
+                    </datalist>
+                    <input class="slider" type="range" min="1" max="100" value="50" list="tickmarks">
+                </div>
             </div>
             <div>
                 <div class="flex-vertical row-gap-p5 mg-t-md">
