@@ -17,7 +17,6 @@
 
 .arrival-left-section,
 .arrival-right-section {
-  width: 50%;
   background-color: var(--lynx-gray-dark);
   height: 100%;
 }
@@ -26,27 +25,36 @@
   height: 5rem;
   width: 20%;
   height: 7.5rem;
+  cursor: pointer;
 }
 
 .price-category-img {
   width: 30rem;
   height: 15rem;
-  cursor: pointer;
   object-fit: cover;
   flex-grow: 1;
 }
 
-.price-category-img:nth-child(1) {
+.price-category {
+  cursor: pointer;
+}
+
+.price-category:nth-child(1) {
   margin-left: -2rem;
 }
 
-.price-category-img:nth-child(3) {
+.price-category:nth-child(3) {
   margin-right: -2rem;
 }
 
 .main-section > div {
   min-height: 100%;
   max-height: max-content;
+}
+
+.home-arrival {
+  width: 50%;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px) {
