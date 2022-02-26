@@ -64,6 +64,12 @@
   .text-overlay-card {
     height: 17.5rem;
   }
+ .price-category:nth-child(1) {
+    margin-left: 0;
+  }
+  .price-category:nth-child(3) {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
